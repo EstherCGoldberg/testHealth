@@ -1,0 +1,23 @@
+<div class="vertical-menu">
+  <nav>
+    <div>
+      <span>
+        <fa-icon [icon]="faHome" class="btn btn-default btn-sm"></fa-icon> 
+      </span>
+      <div *ngFor="let element of elements">
+      <a (click)="toggleElement(element)">
+        <span >
+        <fa-icon *ngIf="!element.isActive" [icon]="faAngleDown" ></fa-icon> 
+        <fa-icon *ngIf="element.isActive" [icon]="faAngleUp" ></fa-icon>
+        </span>
+        {{ element.name }}
+      </a>
+        <div *ngIf="element.isActive && element.links">
+          <div *ngFor="let l of element.links">
+        <a [routerLink]="[l.url]">{{l.name}}</a>
+        </div> 
+        </div>
+      </div>
+      </div>
+</nav>
+</div>

@@ -1,0 +1,27 @@
+.vertical-menu {
+  margin-top: 50px;
+  width: 200px;
+  height: 100%; 
+  text-align: right;
+  border-left: solid #eee;
+}
+
+.vertical-menu a {
+  background-color: #fff;
+  color: black;
+  display: block;
+  padding: 12px; 
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #eee; 
+}
+.vertical-menu p {
+  background-color: #fff;
+  color: black;
+  display: block;
+  padding: 12px; 
+  text-decoration: none;
+}
+
